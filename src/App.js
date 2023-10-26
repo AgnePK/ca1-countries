@@ -3,21 +3,21 @@ import { Container, Row, Col } from "react-bootstrap";
 
 //pages
 import Home from "./pages/Home.js";
-
+import View from "./pages/View.js";
 //components
 import Navbar from "./components/Navbar.js";
 function App() {
 	return (
 		<>
-			<h1>Hello from app</h1>
 			<Router>
+				{/* <h1>Hello from app</h1> */}
+				<Navbar />
 				<Container>
 					<Row>
 						<Col>
-							<Navbar />
-
 							<Routes>
 								<Route path="/" element={<Home />} />
+								<Route path="/country/:name" element={<View />} />
 							</Routes>
 						</Col>
 					</Row>
