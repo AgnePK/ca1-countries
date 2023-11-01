@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
+import "./assets/App.css"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 //pages
 import Home from "./pages/Home.js";
