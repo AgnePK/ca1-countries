@@ -29,12 +29,12 @@ const View = () => {
 	return(
         <>
             <Row>
-                <Col><Image src={country.flags.png}/></Col>
+                <Col><Image className="shadow" src={country.flags.svg} fluid/></Col>
                 <Col>
                     <p>Common name = {country.name.common}</p>
                     <p>Official name = {country.name.official}</p>
                     <p>Currency = {Object.values(country.currencies)[0].name}</p>
-
+                    <p>Official name = {Object.values(country.languages)[0]}</p>
                 </Col>
             </Row>
         </>

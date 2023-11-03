@@ -19,6 +19,7 @@ const CountryCard = (props) => {
 							color: "#274C5B",
 							borderRadius: "30px",
 						}}
+						className="bg-light"
 					>
 						<Card.Img
 							src={props.flag}

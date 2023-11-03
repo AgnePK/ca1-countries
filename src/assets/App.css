@@ -16,16 +16,14 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .navigation {
-	width: auto;
-	height: 100px;
+	color: var(--darkText);
 	background: var(--lightBg);
-	display: flex;
-	justify-content: center;
-	text-decoration: none;
+	margin-bottom: 20px;
 }
 .cardImg {
 	border-radius: 50px;
 }
+
 .search {
 	margin-top: 1rem;
 }

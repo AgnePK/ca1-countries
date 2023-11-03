@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
+import { useState } from "react";
 import "./assets/App.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -9,16 +10,25 @@ import View from "./pages/View.js";
 //components
 import Navbar from "./components/Navbar.js";
 function App() {
+	const [searchTerm, setSearchTerm] = useState("");
+	const [filterRegion, setFilterRegion] = useState("");
+
+	const onHandleChange = (e) => {
+		setSearchTerm(e.target.value);
+	};
+	const onHandleSelect = (selected) => {
+		setFilterRegion(selected);
+	};
+
 	return (
 		<>
 			<Router>
-				{/* <h1>Hello from app</h1> */}
-				<Navbar />
+				<Navbar onHandleSelect={onHandleSelect} onHandleChange={onHandleChange} searchTerm={searchTerm}  />
 				<Container>
 					<Row>
 						<Col>
 							<Routes>
-								<Route path="/" element={<Home />} />
+								<Route path="/" element={<Home searchTerm={searchTerm} filterRegion={filterRegion} />} />
 								<Route path="/country/:name" element={<View />} />
 							</Routes>
 						</Col>
