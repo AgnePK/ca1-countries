@@ -23,7 +23,7 @@ const Navbar = (props) => {
 	};
 	return (
 		<>
-			<Navi expand="lg" className="navigation">
+			<Navi expand="lg" className="navigation bg-light">
 				<Container fluid>
 					<Navi.Brand href="#">
 						<Link to={`/`} className="nav-link">
@@ -66,36 +66,10 @@ const Navbar = (props) => {
 								onChange={handleInputChange}
 								value={props.searchTerm}
 							/>
-							<Button variant="">Search</Button>
 						</Form>
 					</Navi.Collapse>
 				</Container>
 			</Navi>
-
-			{/* <Navi className="navigation">
-				<Nav>
-					<div>
-						<span className="logo">Satellite</span>
-					</div>
-					<div>
-						<Link to={`/`}>
-							<Button>Home</Button>
-						</Link>
-						<Link to={`/`}>Region</Link>
-						<Link to={`/`}>continents</Link>
-						<Link to={`/`}>About us</Link>
-						<Link to={`/`}>Contact us</Link>
-					</div>
-					<div className="search">
-						<input
-							type="text"
-							// value={term}
-							// onChange={handleChange}
-							// onKeyUp={handleKeyUp}
-						/>
-					</div>
-				</Nav>
-			</Navi> */}
 		</>
 	);
 };

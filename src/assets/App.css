@@ -1,4 +1,4 @@
-:myVars {
+:root {
 	--darkText: #274C5B;
 	--lightBg: #fffcfb;
 	--pink: #FFF3EC;
@@ -7,6 +7,11 @@
 /* open sans
 font-family: 'Open Sans', sans-serif;
 */
+.body{
+	color: var(--darkText);
+	/* background-color: #c6df08; */
+}
+
 
 .logo{
 	color: #274C5B;
@@ -20,22 +25,4 @@ font-family: 'Open Sans', sans-serif;
 	background: var(--lightBg);
 	margin-bottom: 20px;
 }
-.cardImg {
-	border-radius: 50px;
-}
 
-.search {
-	margin-top: 1rem;
-}
-Button {
-	padding: 4rem, 0rem;
-	margin: 10px;
-	/* box-shadow: inset; */
-}
-.Link{
-	text-decoration: none !important;
-}
-link{
-	text-decoration: none !important;
-	color: var(--darkText);
-}

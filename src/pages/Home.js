@@ -31,8 +31,7 @@ const Home = (props) => {
 			});
 			setfilteredList(filter);
 		}
-	}, [countriesList,props.searchTerm]);
-
+	}, [countriesList, props.searchTerm]);
 
 	useEffect(() => {
 		if (props.filterRegion <= 1) {
@@ -43,7 +42,7 @@ const Home = (props) => {
 			});
 			setfilteredList(filter);
 		}
-	}, [countriesList,props.filterRegion]);
+	}, [countriesList, props.filterRegion]);
 
 	let countryCards = filteredList.map((country, i) => {
 		return (
@@ -51,14 +50,19 @@ const Home = (props) => {
 				key={i}
 				flag={country.flags.png}
 				name={country.name.common}
+				capital={country.capital}
+				borders={country.borders}
+				pop={country.population}
 				official={country.name.official}
 				region={country.region}
 			/>
 		);
 	});
-
 	return (
 		<>
+			<h1 className="mb-3">
+				<b>{props.filterRegion}</b>
+			</h1>
 			<Row className="g-4" md={4} xs={2}>
 				{countryCards}
 			</Row>
