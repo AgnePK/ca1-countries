@@ -48,7 +48,7 @@ const Navbar = (props) => {
 								<NavDropdown.Item eventKey="Africa">Africa</NavDropdown.Item>
 								<NavDropdown.Item eventKey="Oceania">Oceania</NavDropdown.Item>
 								<NavDropdown.Item eventKey="Americas">Americas</NavDropdown.Item>
-								<NavDropdown.Item eventKey="Antarctica">Antarctica</NavDropdown.Item>
+								<NavDropdown.Item eventKey="Antarctic">Antarctic</NavDropdown.Item>
 							</NavDropdown>
 							<Link to={`/`} className="nav-link">
 								Contact us
