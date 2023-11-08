@@ -7,9 +7,11 @@
 /* open sans
 font-family: 'Open Sans', sans-serif;
 */
+li{
+	list-style-type: none
+}
 .body{
 	color: var(--darkText);
-	/* background-color: #c6df08; */
 }
 
 
@@ -24,5 +26,15 @@ font-family: 'Open Sans', sans-serif;
 	color: var(--darkText);
 	background: var(--lightBg);
 	margin-bottom: 20px;
+}
+
+.weatherBox{
+	/* background-color: var(--lightBg); */
+	padding: 20px;
+	font-size: 20px;
+}
+
+.page-footer{
+	background-color: var(--lightBg);
 }
 

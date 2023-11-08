@@ -9,6 +9,7 @@ import Home from "./pages/Home.js";
 import View from "./pages/View.js";
 //components
 import Navbar from "./components/Navbar.js";
+import Footer from "./components/Footer.js";
 function App() {
 	const [searchTerm, setSearchTerm] = useState("");
 	const [filterRegion, setFilterRegion] = useState("");
@@ -43,6 +44,7 @@ function App() {
 						</Col>
 					</Row>
 				</Container>
+				<Footer/>
 			</Router>
 		</>
 	);
