@@ -29,24 +29,30 @@ const Footer = () => {
 						<Link to={`/`} className="nav-link fw-semibold">
 							<span className="logo">Satellite</span>
 						</Link>{" "}
-						<p>
-							This is a countries app using APIs in a React js app.
-						</p>
+						<p>This is a countries app using APIs in a React js app.</p>
+						<i class="bi bi-instagram fs-2" ></i>
+						<i class="bi bi-facebook fs-2"></i>
+						<i class="bi bi-github fs-2"></i>
+						<i class="bi bi-twitter fs-2"></i>
 					</div>
 					<div className="col-md-3 mb-md-0 mb-3">
-						<h5  className="fs-3 pt-2 text-start">Utilities Page</h5>
+						<h5 className="fs-3 pt-2 text-start">Utilities Page</h5>
 						<ul className="list-unstyled text-start">
 							<li>
-								<Link className="nav-link">Style Guild</Link><br/>
+								<Link className="nav-link">Style Guild</Link>
+								<br />
 							</li>
 							<li>
-								<Link className="nav-link">404 not found</Link><br/>
+								<Link className="nav-link">404 not found</Link>
+								<br />
 							</li>
 							<li>
-								<Link className="nav-link">Licences</Link><br/>
+								<Link className="nav-link">Licences</Link>
+								<br />
 							</li>
 							<li>
-								<Link className="nav-link">Changelog</Link><br/>
+								<Link className="nav-link">Changelog</Link>
+								<br />
 							</li>
 						</ul>
 					</div>

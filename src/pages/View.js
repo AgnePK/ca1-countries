@@ -8,7 +8,7 @@ const View = () => {
 	const [country, setCountry] = useState(null);
 	const [city, setCity] = useState();
 	const [weather, setWeather] = useState({});
-	// console.log(city);
+	console.log(city);
 	
 	useEffect(() => {
 		axios
@@ -45,6 +45,7 @@ const View = () => {
 				console.log(error);
 			});
 	}, []);
+	console.log(weather);
 
 	if (!country) {
 		return <Spinner animation="grow" />;
