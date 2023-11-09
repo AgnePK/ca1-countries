@@ -4,31 +4,23 @@ const CountryCard = (props) => {
 	return (
 		<>
 			<Col>
-				<Link
-					to={`/country/${props.name}`}
-					style={{
-						textDecoration: "none",
-						color: "#274C5B",
-					}}
-				>
+				<Link to={`/country/${props.name}`} className="cardTitle">
 					<Card
+						className="bg-light countryCard"
 						style={{
-							width: "20rem",
-							border: "none",
-							boxShadow: "0 3px 6px 0 rgba(0, 0, 0, 0.2)",
 							color: "#274C5B",
 							borderRadius: "30px",
 						}}
-						className="bg-light"
 					>
 						<Card.Img
 							src={props.flag}
-							varient="top"
+							varient="top cardImage"
 							style={{ height: "11rem", borderRadius: "30px" }}
 						/>
 						<Card.Body>
-						
-							<Card.Title style={{fontSize: "22px"}}><b>{props.name}</b></Card.Title>
+							<Card.Title style={{ fontSize: "22px" }}>
+								<b>{props.name}</b>
+							</Card.Title>
 							<Card.Text>
 								<p>
 									<b>Full Name: </b>
