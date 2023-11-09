@@ -2,7 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 const Footer = () => {
 	return (
-		<footer className="page-footer blue pt-4">
+		<footer className="page-footer blue pt-4" style={{color:"#274C5B"}}>
 			<div className="container-fluid text-center">
 				<div className="row">
 					<div className="col-md-3 mb-md-0 mb-3">

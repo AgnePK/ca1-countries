@@ -60,7 +60,7 @@ const Home = (props) => {
 	});
 	return (
 		<>
-			<h1 className="mb-3">
+			<h1 className="mb-3" style={{color:"#274C5B"}}>
 				<b>{props.filterRegion}</b>
 			</h1>
 			<Row className="g-4" md={4} xs={2}>

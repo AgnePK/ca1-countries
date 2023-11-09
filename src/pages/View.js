@@ -54,7 +54,7 @@ const View = () => {
 	}
 	return (
 		<>
-			<Row>
+			<Row  style={{color:"#274C5B"}}>
 				<Col className="mb-4">
 					<h2>{country.name.common}</h2>
 				</Col>
@@ -87,7 +87,7 @@ const View = () => {
 			</Row>
 			<Row className="weatherBox mt-5">
 				<Col>
-					<div>
+					<div  style={{color:"#274C5B"}}>
 						<span className="fs-3 fw-semibold">View Google Maps</span>
 					</div>
 					<iframe
@@ -102,7 +102,7 @@ const View = () => {
 					></iframe>
 				</Col>
 				<Col>
-					<div>
+					<div  style={{color:"#274C5B"}}>
 						<span className="fs-3 fw-semibold">
 							Current weather in {country.capital}
 						</span>
