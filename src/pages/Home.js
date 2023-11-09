@@ -32,7 +32,7 @@ const Home = (props) => {
 			setfilteredList(filter);
 		}
 	}, [countriesList, props.searchTerm]);
-// 
+
 	useEffect(() => {
 		if (props.filterRegion <= 1) {
 			setfilteredList(countriesList);

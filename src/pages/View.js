@@ -29,9 +29,11 @@ const View = () => {
 	//Weather API
 
 	useEffect(() => {
+
+		if(!city) return;
 		axios({
-			// url: `https://api.api-ninjas.com/v1/weather?city=${city}`,
-			url: "https://api.api-ninjas.com/v1/weather?city=Dublin",
+			url: `https://api.api-ninjas.com/v1/weather?city=${city}`,
+			// url: "https://api.api-ninjas.com/v1/weather?city=Dublin",
 			method: "get",
 			headers: {
 				"X-Api-Key": "Y5t+50/DAWKI2rny1IS7ig==Oera9lC0J9GVlXrA",
@@ -44,7 +46,7 @@ const View = () => {
 			.catch((error) => {
 				console.log(error);
 			});
-	}, []);
+	}, [city]);
 	console.log(weather);
 
 	if (!country) {
@@ -73,9 +75,9 @@ const View = () => {
 						<p>
 							<b>Currency:</b> {Object.values(country.currencies)[0].name}
 						</p>
-						<p>
+						{/* <p>
 							<b>Bordering countries:</b> {Object.values(country.borders)}
-						</p>
+						</p> */}
 						<p>
 							<b>Official language(s):</b> {Object.values(country.languages)[0]}{" "}
 							{Object.values(country.languages)[1]}
